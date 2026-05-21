@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大小樹教育學院 ✕ 老師合作調查表</title>
+  <meta name="description" content="大小樹教育學院老師合作調查表，歡迎有興趣合作的老師填寫。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════
+       第一頁：小樹老師自我介紹
+  ════════════════════════════════ -->
+  <div id="page-intro" class="page active">
+    <div class="card">
+
+      <div class="logo">🌳 大小樹教育學院</div>
+
+      <div class="progress">
+        <div class="dot active" id="dot-1"></div>
+        <div class="dot"       id="dot-2"></div>
+      </div>
+
+      <h1 class="intro-heading">老師您好，我是小樹老師。</h1>
+
+      <div class="intro-body">
+        <p>大小樹教育學院的初衷，是要做到以下這些事情：</p>
+
+        <div class="highlight-block">
+          <p>有拖延、情緒管理不佳、學習意願低落、ADHD 和自閉症孩子學習問題<br>
+          → 自主學習，自己寫作業，複習＋預習，遇到挑戰自己找解決方法或尋求幫助，積極並懂得建立好習慣好作息，有情緒上的狀況，也能好好表達，並陪伴自己</p>
+        </div>
+
+        <div class="highlight-block">
+          <p><strong>父母改變：</strong><br>
+          父母和大人每天焦慮、擔心、不知如何協助孩子<br>
+          → 能情緒平靜穩定的過每一天跟陪伴孩子，愛自己把自己優先照顧好，與孩子有更多親暱關係。</p>
+        </div>
+
+        <p>而當中很大的一個原因，是我自己在教育第一線這麼多年，發現不管是國小、國中還是高中的孩子，在學校裡有八成以上其實學習意願都蠻低落的。</p>
+
+        <p>我想要改變台灣的教育環境，所以才出來創立公司。</p>
+
+        <p>我們的核心是希望幫助更多的孩子與家庭，讓孩子能夠主動學習；因為我覺得孩子只要可以主動學習、面對挑戰，並學會自己找問題、找方法，這對孩子長遠來說是最有幫助的。</p>
+
+        <p>為了做到這件事，我有以下的做法：</p>
+        <ol>
+          <li>培訓老師或跟家長分享：傳承第一線的教學經驗。</li>
+          <li>研發溝通方法：我將第一線教學經驗，結合心理學與科學方法整理成一套溝通法，讓家長在家就能透過溝通來幫助孩子主動學習。</li>
+        </ol>
+
+        <p>這麼多年下來，在「大小樹教育學院」這邊，我主要透過以下方式來協助家長與老師：</p>
+        <ul>
+          <li>孩子家長一對一親職顧問</li>
+          <li>會員訂閱課程</li>
+        </ul>
+
+        <p>透過這些方式，我們希望能讓大人在陪伴孩子的過程中，知道要如何引導孩子主動學習。</p>
+
+        <p>我們在各大平台都有分享一些我們的價值觀還有教學的方法<br>
+        <a href="https://bigsmalltree.com/sCfj5" target="_blank" rel="noopener">https://bigsmalltree.com/sCfj5</a></p>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="goToSurvey()">繼續 →</button>
+      </div>
+
+    </div>
+  </div><!-- /page-intro -->
+
+
+  <!-- ════════════════════════════════
+       第二頁：合作調查問卷
+  ════════════════════════════════ -->
+  <div id="page-survey" class="page">
+    <div class="card">
+
+      <div class="logo">🌳 大小樹教育學院</div>
+
+      <div class="progress">
+        <div class="dot" id="dot-1b"></div>
+        <div class="dot active" id="dot-2b"></div>
+      </div>
+
+      <div class="form-header">
+        <h2>老師合作調查表</h2>
+        <p>感謝您願意花時間填寫！這些資訊將幫助小樹老師更了解您，共同探索合作的可能性。</p>
+      </div>
+
+      <form id="survey-form" novalidate>
+
+        <!-- Q1 -->
+        <div class="question">
+          <label for="q-name">1. 怎麼稱呼您呢？<span class="required">*</span></label>
+          <input type="text" id="q-name" name="name"
+                 placeholder="例：王老師、林先生、陳小姐"
+                 required maxlength="60">
+        </div>
+
+        <!-- Q2 -->
+        <div class="question">
+          <label for="q-selfIntro">2. 方便簡單的自我介紹一下嗎？</label>
+          <textarea id="q-selfIntro" name="selfIntro"
+                    placeholder="您的背景、經歷、目前主要在做什麼..."></textarea>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question">
+          <label for="q-expertise">3. 專長是什麼？您可以幫自己的客戶解決什麼問題？</label>
+          <textarea id="q-expertise" name="expertise"
+                    placeholder="您擅長的領域，以及您能為客戶帶來什麼改變..."></textarea>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question">
+          <label for="q-workStyle">4. 目前主要是在哪邊工作呢？線上、線下、家教、自己開工作室，或是接案呢？</label>
+          <textarea id="q-workStyle" name="workStyle"
+                    placeholder="例：主要做線上一對一，同時也有自己的工作室..."></textarea>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question">
+          <label for="q-team">5. 底下有員工嗎？還是有自己的合作團隊呢？</label>
+          <textarea id="q-team" name="team"
+                    placeholder="例：自己一個人、自己的小團隊、直銷團隊、聯盟行銷..."></textarea>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question">
+          <label for="q-onlineGroup">6. 有在經營線上私人的群組嗎？LINE 社群、群組、Skool 或其他？</label>
+          <textarea id="q-onlineGroup" name="onlineGroup"
+                    placeholder="例：有 LINE 群組約 200 人、Skool 社群 50 人..."></textarea>
+        </div>
+
+        <!-- Q7 -->
+        <div class="question">
+          <label for="q-platforms">7. 有哪些資料或線上平台，可以讓我多認識你嗎？</label>
+          <textarea id="q-platforms" name="platforms"
+                    placeholder="Facebook、Instagram、YouTube、個人網站連結等...&#10;（剪報或截圖可以直接傳訊息給我）"></textarea>
+        </div>
+
+        <!-- Q8 -->
+        <div class="question">
+          <label for="q-location">8. 如果您是做線下的話，目前是在哪一個地區呢？</label>
+          <input type="text" id="q-location" name="location"
+                 placeholder="例：台北市、新北市...（若純線上可填「線上」）"
+                 maxlength="60">
+        </div>
+
+        <!-- Q9 -->
+        <div class="question">
+          <label for="q-credential">9. 有什麼方法，是我可以知道您真的有專長可以一起合作呢？</label>
+          <textarea id="q-credential" name="credential"
+                    placeholder="無意冒犯，只是想在合作之前確認您有能力解決客戶問題。&#10;例：作品集連結、客戶見證截圖、可體驗您的服務..."></textarea>
+        </div>
+
+        <!-- Q10 -->
+        <div class="question">
+          <label for="q-longTermCoop">10. 想要長期的合作嗎？</label>
+          <textarea id="q-longTermCoop" name="longTermCoop"
+                    placeholder="如果是的話，我會需要您付費加入我們的會員課程內容，這部分有興趣我可以在訊息跟老師分享。當然老師有意願，我也可以付費體驗老師的服務，或是交換課程體驗也可以。&#10;&#10;請分享您對長期合作的想法..."></textarea>
+        </div>
+
+        <!-- Q11 -->
+        <div class="question">
+          <label for="q-shortTermCoop">11. 想要短期的合作嗎？如果是的話，有什麼想法？</label>
+          <textarea id="q-shortTermCoop" name="shortTermCoop"
+                    placeholder="例：暑期營隊我負責招生、彼此互惠招生、共同辦活動..."></textarea>
+        </div>
+
+        <!-- Q12 -->
+        <div class="question">
+          <label for="q-expectation">12. 對於合作有什麼想法或期望嗎？</label>
+          <textarea id="q-expectation" name="expectation"
+                    placeholder="您希望透過合作達到什麼目標，或對合作有什麼期待..."></textarea>
+        </div>
+
+        <!-- Q13 -->
+        <div class="question">
+          <label for="q-businessPlan">13. 您對自己事業或未來規劃是什麼呢？</label>
+          <textarea id="q-businessPlan" name="businessPlan"
+                    placeholder="這部分是小樹老師想多了解，看看有沒有其他合作可能，或我可以幫上忙的地方..."></textarea>
+        </div>
+
+        <!-- Q14 -->
+        <div class="question">
+          <label for="q-additionalInfo">14. 有沒有什麼訊息是想要跟我分享，讓我們可以更有效率的合作呢？</label>
+          <textarea id="q-additionalInfo" name="additionalInfo"
+                    placeholder="任何您覺得重要的資訊，或想讓小樹老師知道的事..."></textarea>
+        </div>
+
+        <div id="error-notice" class="error-notice">
+          送出時發生問題，請稍後再試。若問題持續，歡迎直接與小樹老師聯繫！
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn-primary" id="submit-btn">送出問卷</button>
+        </div>
+
+      </form>
+    </div>
+  </div><!-- /page-survey -->
+
+
+  <!-- ════════════════════════════════
+       第三頁：感謝畫面
+  ════════════════════════════════ -->
+  <div id="page-success" class="page">
+    <div class="card">
+      <div class="logo">🌳 大小樹教育學院</div>
+
+      <div class="success-wrap">
+        <div class="success-icon">🌱</div>
+        <h2>感謝您的填寫！</h2>
+        <p>您的資料已成功送出。小樹老師會盡快閱覽，並與您聯繫探討合作的可能性，敬請期待！</p>
+        <div class="success-links">
+          <p>歡迎先到各大平台認識我們：</p>
+          <a href="https://bigsmalltree.com/sCfj5" target="_blank" rel="noopener" class="btn-outline">
+            前往大小樹教育學院 →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- /page-success -->
+
+  <script src="script.js"></script>
+</body>
+</html>
