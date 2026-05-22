@@ -103,92 +103,108 @@
 
         <!-- Q2 -->
         <div class="question">
-          <label for="q-selfIntro">2. 方便簡單的自我介紹一下嗎？</label>
-          <textarea id="q-selfIntro" name="selfIntro"
-                    placeholder="您的背景、經歷、目前主要在做什麼..."></textarea>
+          <label for="q-lineId">2. 您的 LINE 名稱跟 ID？<small class="hint">（僅用來問卷調查完連絡討論用）</small></label>
+          <input type="text" id="q-lineId" name="lineId"
+                 placeholder="例：LINE 名稱「王小明」、LINE ID：wangxiaomin"
+                 maxlength="120">
         </div>
 
         <!-- Q3 -->
         <div class="question">
-          <label for="q-expertise">3. 專長是什麼？您可以幫自己的客戶解決什麼問題？</label>
-          <textarea id="q-expertise" name="expertise"
-                    placeholder="您擅長的領域，以及您能為客戶帶來什麼改變..."></textarea>
+          <label for="q-email">3. 您的信箱？<small class="hint">（僅用來問卷調查完連絡討論用）</small></label>
+          <input type="email" id="q-email" name="email"
+                 placeholder="例：yourname@gmail.com"
+                 maxlength="120">
         </div>
 
         <!-- Q4 -->
         <div class="question">
-          <label for="q-workStyle">4. 目前主要是在哪邊工作呢？線上、線下、家教、自己開工作室，或是接案呢？</label>
-          <textarea id="q-workStyle" name="workStyle"
-                    placeholder="例：主要做線上一對一，同時也有自己的工作室..."></textarea>
+          <label for="q-selfIntro">4. 方便簡單的自我介紹一下嗎？</label>
+          <textarea id="q-selfIntro" name="selfIntro"
+                    placeholder="您的背景、經歷、目前主要在做什麼..."></textarea>
         </div>
 
         <!-- Q5 -->
         <div class="question">
-          <label for="q-team">5. 底下有員工嗎？還是有自己的合作團隊呢？</label>
-          <textarea id="q-team" name="team"
-                    placeholder="例：自己一個人、自己的小團隊、直銷團隊、聯盟行銷..."></textarea>
+          <label for="q-expertise">5. 專長是什麼？您可以幫自己的客戶解決什麼問題？</label>
+          <textarea id="q-expertise" name="expertise"
+                    placeholder="您擅長的領域，以及您能為客戶帶來什麼改變..."></textarea>
         </div>
 
         <!-- Q6 -->
         <div class="question">
-          <label for="q-onlineGroup">6. 有在經營線上私人的群組嗎？LINE 社群、群組、Skool 或其他？</label>
-          <textarea id="q-onlineGroup" name="onlineGroup"
-                    placeholder="例：有 LINE 群組約 200 人、Skool 社群 50 人..."></textarea>
+          <label for="q-workStyle">6. 目前主要是在哪邊工作呢？線上、線下、家教、自己開工作室，或是接案呢？</label>
+          <textarea id="q-workStyle" name="workStyle"
+                    placeholder="例：主要做線上一對一，同時也有自己的工作室..."></textarea>
         </div>
 
         <!-- Q7 -->
         <div class="question">
-          <label for="q-platforms">7. 有哪些資料或線上平台，可以讓我多認識你嗎？</label>
-          <textarea id="q-platforms" name="platforms"
-                    placeholder="Facebook、Instagram、YouTube、個人網站連結等...&#10;（剪報或截圖可以直接傳訊息給我）"></textarea>
+          <label for="q-team">7. 底下有員工嗎？還是有自己的合作團隊呢？</label>
+          <textarea id="q-team" name="team"
+                    placeholder="例：自己一個人、自己的小團隊、直銷團隊、聯盟行銷..."></textarea>
         </div>
 
         <!-- Q8 -->
         <div class="question">
-          <label for="q-location">8. 如果您是做線下的話，目前是在哪一個地區呢？</label>
+          <label for="q-onlineGroup">8. 有在經營線上私人的群組嗎？LINE 社群、群組、Skool 或其他？</label>
+          <textarea id="q-onlineGroup" name="onlineGroup"
+                    placeholder="例：有 LINE 群組約 200 人、Skool 社群 50 人..."></textarea>
+        </div>
+
+        <!-- Q9 -->
+        <div class="question">
+          <label for="q-platforms">9. 有哪些資料或線上平台，可以讓我多認識你嗎？</label>
+          <textarea id="q-platforms" name="platforms"
+                    placeholder="Facebook、Instagram、YouTube、個人網站連結等...&#10;（剪報或截圖可以直接傳訊息給我）"></textarea>
+        </div>
+
+        <!-- Q10 -->
+        <div class="question">
+          <label for="q-location">10. 如果您是做線下的話，目前是在哪一個地區呢？</label>
           <input type="text" id="q-location" name="location"
                  placeholder="例：台北市、新北市...（若純線上可填「線上」）"
                  maxlength="60">
         </div>
 
-        <!-- Q9 -->
+        <!-- Q11 -->
         <div class="question">
-          <label for="q-credential">9. 有什麼方法，是我可以知道您真的有專長可以一起合作呢？</label>
+          <label for="q-credential">11. 有什麼方法，是我可以知道您真的有專長可以一起合作呢？</label>
           <textarea id="q-credential" name="credential"
                     placeholder="無意冒犯，只是想在合作之前確認您有能力解決客戶問題。&#10;例：作品集連結、客戶見證截圖、可體驗您的服務..."></textarea>
         </div>
 
-        <!-- Q10 -->
+        <!-- Q12 -->
         <div class="question">
-          <label for="q-longTermCoop">10. 想要長期的合作嗎？</label>
+          <label for="q-longTermCoop">12. 想要長期的合作嗎？</label>
           <textarea id="q-longTermCoop" name="longTermCoop"
                     placeholder="如果是的話，我會需要您付費加入我們的會員課程內容，這部分有興趣我可以在訊息跟老師分享。當然老師有意願，我也可以付費體驗老師的服務，或是交換課程體驗也可以。&#10;&#10;請分享您對長期合作的想法..."></textarea>
         </div>
 
-        <!-- Q11 -->
+        <!-- Q13 -->
         <div class="question">
-          <label for="q-shortTermCoop">11. 想要短期的合作嗎？如果是的話，有什麼想法？</label>
+          <label for="q-shortTermCoop">13. 想要短期的合作嗎？如果是的話，有什麼想法？</label>
           <textarea id="q-shortTermCoop" name="shortTermCoop"
                     placeholder="例：暑期營隊我負責招生、彼此互惠招生、共同辦活動..."></textarea>
         </div>
 
-        <!-- Q12 -->
+        <!-- Q14 -->
         <div class="question">
-          <label for="q-expectation">12. 對於合作有什麼想法或期望嗎？</label>
+          <label for="q-expectation">14. 對於合作有什麼想法或期望嗎？</label>
           <textarea id="q-expectation" name="expectation"
                     placeholder="您希望透過合作達到什麼目標，或對合作有什麼期待..."></textarea>
         </div>
 
-        <!-- Q13 -->
+        <!-- Q15 -->
         <div class="question">
-          <label for="q-businessPlan">13. 您對自己事業或未來規劃是什麼呢？</label>
+          <label for="q-businessPlan">15. 您對自己事業或未來規劃是什麼呢？</label>
           <textarea id="q-businessPlan" name="businessPlan"
                     placeholder="這部分是小樹老師想多了解，看看有沒有其他合作可能，或我可以幫上忙的地方..."></textarea>
         </div>
 
-        <!-- Q14 -->
+        <!-- Q16 -->
         <div class="question">
-          <label for="q-additionalInfo">14. 有沒有什麼訊息是想要跟我分享，讓我們可以更有效率的合作呢？</label>
+          <label for="q-additionalInfo">16. 有沒有什麼訊息是想要跟我分享，讓我們可以更有效率的合作呢？</label>
           <textarea id="q-additionalInfo" name="additionalInfo"
                     placeholder="任何您覺得重要的資訊，或想讓小樹老師知道的事..."></textarea>
         </div>

@@ -2,7 +2,7 @@
 //  設定：部署 Google Apps Script 後，將 Web App URL
 //  填入下方 GAS_URL，取代 'YOUR_GAS_WEB_APP_URL'
 // ══════════════════════════════════════════════════
-const GAS_URL = 'https://script.google.com/macros/s/AKfycbzVuqQLkVY1gt77yWnSb9zz2n35L7mmWENXwykOI5vrfrTLrj3pw-KL7W7r71Ie20A8nA/exec';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbwxwuTSd_KxNsOgN1lZlbQ5Q1m09dDUGQhmgIXv6_cqRQ0kXvowR3LAmBrq7SEdEgrQeQ/exec';
 
 // ── 頁面切換 ──
 function showPage(id) {
@@ -35,6 +35,8 @@ document.getElementById('survey-form').addEventListener('submit', async function
   // 收集資料
   const data = {
     name:           form.name.value.trim(),
+    lineId:         form.lineId.value.trim(),
+    email:          form.email.value.trim(),
     selfIntro:      form.selfIntro.value.trim(),
     expertise:      form.expertise.value.trim(),
     workStyle:      form.workStyle.value.trim(),
